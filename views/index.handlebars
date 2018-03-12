@@ -1,0 +1,14 @@
+{{!-- <h1>{{ fruits }}</h1> --}}
+
+<form action="/notes" method="post">
+	<input type="text" name="title">
+	<textarea name="details" cols="30" rows="10"></textarea>
+	<button>Submit</button>
+</form>
+
+{{#each notes}}
+	<div class="note">
+		<h3>Title: {{ this.title }}</h3>
+		<h4>Details: {{ this.details }}</h4>
+	</div>
+{{/each}}

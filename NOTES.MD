@@ -1,0 +1,3 @@
+sequelize
+  - crud
+  - associations
